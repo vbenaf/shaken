@@ -81,11 +81,14 @@ function mouseClicked() {
     counterPressed++;
 }
 */
-let col1=15;
-let col2=10;
-let col3=20;
-function setup(){
-    createCanvas(200,500);
-    fill(col1,col2,col3);
-    rect(width/2,height/2,50,50);
+let value = 0;
+function draw() {
+  fill(value);
+  rect(25, 25, 50, 50);
+}
+function deviceShaken() {
+  value = value + 5;
+  if (value > 255) {
+    value = 0;
+  }
 }
