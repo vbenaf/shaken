@@ -81,8 +81,11 @@ function mouseClicked() {
     counterPressed++;
 }
 */
-
+let col1=15;
+let col2=10;
+let col3=20;
 function setup(){
     createCanvas(700,500);
-    background(42,22,67);
+    fill(col1,col2,col3);
+    rect(width/2,height/2,50,50);
 }
